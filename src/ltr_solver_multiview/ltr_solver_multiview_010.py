@@ -1,5 +1,5 @@
 ######################
-## Version 0.4 #######
+## Version 0.1 #######
 ######################
 """
 **********************************************************************
@@ -18,9 +18,9 @@
    PRLTR is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU Lesser General Public License for more details.
+   MIT License for more details.
 
-   You should have received a copy of the GNU General Public License
+   You should have received a copy of the MIT License
    along with PRLTR.  If not, see <http://www.gnu.org/licenses/>.
 
 ***********************************************************************/
@@ -30,7 +30,7 @@
 Polynomial regression via latent tensor reconstruction
 Multiview version 
 
-Version 0.4 (26.06.2022)
+Version 0.1 (26.07.2022)
 """
 
 """
@@ -47,6 +47,7 @@ polynomial encoding, a(X\lambda_{u}U)V^{T}
 --- yindex is introduced for output table
 --- normalization revised
 --- data control on parameter operations, normalizaqtion, initialization, update    
+
 """
 
 ## #####################################################
