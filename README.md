@@ -16,7 +16,9 @@ The LTR package might be installed by the following procedures. In the
 first step the LTR package needs to be downloaded from the github.
 
 >mkdir ltrpath
+
 >cd ltrpath
+
 >git clone https://github.com/aalto-ics-kepaco/LTR_Multiview
 
 After downloading the LTR there are two alternatives:
@@ -32,6 +34,7 @@ It can be realized by this command.
 The package can be builded with these commands 
 
 >cd ltrpath
+
 >pip3 -m build
 
 and follow similar installation as in the previous case.
@@ -42,6 +45,7 @@ In installing from the source the latest version of the Python
 packages **pip** and **build** need to be installed.
 
 >pip3 install --upgrade pip
+
 >pip3 install --upgrade build
 
 
