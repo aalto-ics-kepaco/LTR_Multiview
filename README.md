@@ -15,6 +15,12 @@ can be freely downloaded and installed from *pypi.org*.
 The LTR package might be installed by the following procedures. In the
 first step the LTR package needs to be downloaded from the github.
 
+### Directly from the github
+
+>pip3 install git+https://github.com/aalto-ics-kepaco/LTR_multiview.git#egg=LTR_multiview
+
+### Downloading from github
+
 >mkdir ltrpath
 
 >cd ltrpath
