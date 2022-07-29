@@ -12,8 +12,7 @@ can be freely downloaded and installed from *pypi.org*.
 
 ## Installation
 
-The LTR package might be installed by the following procedures. In the
-first step the LTR package needs to be downloaded from the github.
+The LTR package might be installed by the following procedures. 
 
 ### Directly from the github
 
@@ -27,28 +26,12 @@ first step the LTR package needs to be downloaded from the github.
 
 >git clone https://github.com/aalto-ics-kepaco/LTR_Multiview
 
-After downloading the LTR there are two alternatives:
+After downloading the LTR package it can be installed by the following command:
 
-#### Installing directly from the source distribution 
-It can be realized by this command.
-
->pip3 install ltrpath/dist/ltr_solver_multiview-0.10.0.tar.gz
+>pip3 install ltrpath
 
 
-#### Building from the source 
-
-The package can be builded with these commands 
-
->cd ltrpath
-
->pip3 -m build
-
-and follow similar installation as in the previous case.
-
->pip3 install ltrpath/dist/ltr_solver_multiview-0.10.0.tar.gz
-
-In installing from the source the latest version of the Python
-packages **pip** and **build** need to be installed.
+Before installing the LTR package the latest version of the Python packages **pip** and **build** need to be installed. 
 
 >pip3 install --upgrade pip
 
