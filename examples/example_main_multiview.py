@@ -111,7 +111,7 @@ def main(iworkmode=None):
   cregular=0.000001  
 
   ## activation function
-  iactfunc = 0  ## =0 identity, =1 arcsinh =2 2*sigmoid-1 =3 tanh
+  iactfunc = 0  ## =0 identity, =1 arcsinh, =2 2*sigmoid-1, =3 tanh, =4 relu
 
   ## cmodel.lossdegree = 0  ## =0 L_2^2, =1 L^2, =0.5 L_2^{0.5}, ...L_2^{z}
   lossdegree=0  ## default L_2^2 =0
