@@ -1159,9 +1159,9 @@ class ltr_solver_cls:
     for d in range(norder):
       Ulambda = (xU[d].T*xlambdaU[d]).T
       xXU[d] = gc.matmul(tnsrX[d],Ulambda)
+      xActD[d] = self.activation_func_diff(xXU[d],self.iactfunc)
       xXU[d] = self.activation_func(xXU[d],self.iactfunc)
       xXUV[d] = gc.matmul(xXU[d],xV[d].T)
-      xActD[d] = self.activation_func_diff(xXU[d],self.iactfunc)
 
     F0=xXUV[0]
     for d in range(1,norder):
