@@ -28,7 +28,7 @@ The LTR package might be installed by the following procedures.
 
 After downloading the LTR package it can be installed by the following command:
 
->pip3 install ltrpath
+>pip3 install ltrpath/LTR_Multiview
 
 
 Before installing the LTR package the latest version of the Python packages **pip** and **build** need to be installed. 
@@ -40,7 +40,7 @@ Before installing the LTR package the latest version of the Python packages **pi
 
 The LTR can be imported as
 
->import ltr_solver_multiview as ltr
+>import ltr_multiview as ltr
 
 and the solver object can be constructed by
 
