@@ -15,7 +15,7 @@ from sklearn.metrics import mean_squared_error
 ## ###################################################
 
 import data_generator 
-import ltr_solver_multiview as ltr
+import ltr_multiview as ltr
 
 ## ################################################################
 ## ################################################################
@@ -270,8 +270,8 @@ def main(iworkmode=None):
       lxtrain = [xtrain[:,:nhalf], xtrain[:,nhalf:]]
       ## combine the variables of the first half to the second one, 
       ## where each variable can have power up to 2
-      ## X = [X1,X2] = > 1, X1, X2, X1*X2, X1**2 * X2, X1*X2**2, X1**2*X2**2
-      llinks = [ [0,2], [1,2]]
+      ## X = [X0,X1] = > 1, X0, X1, X0*X1, X1*X1
+      llinks = [ [0,1], [1]]
       cmodel.fit(lxtrain, ytrain, llinks = llinks, xindex = None, \
                            nepoch=nrepeat)
       time1 = time.time()

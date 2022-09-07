@@ -15,7 +15,7 @@ from sklearn.metrics import mean_squared_error
 ## ###################################################
 
 import data_generator 
-import ltr_solver_multiview as ltr
+import ltr_multiview as ltr
 
 ## ################################################################
 ## ################################################################
@@ -94,21 +94,21 @@ def main(iworkmode=None):
   ## Parameters to learn
   ## the most important parameter
   norder=2      ## maximum power
-  rank=50      ## number of rows
-  rankuv=20   ## internal rank for bottlenesck if rankuv<rank
+  rank=100      ## number of rows
+  rankuv=50   ## internal rank for bottlenesck if rankuv<rank
   sigma=0.01  ## learning step size
   nsigma=10      ## step size correction interval
-  gammanag=0.9     ## discount for the ADAM method
-  gammanag2=0.9    ## discount for the ADAM method norm
+  gammanag=0.99     ## discount for the ADAM method
+  gammanag2=0.99    ## discount for the ADAM method norm
 
   # mini-bacht size,
   mblock=500
 
   ## number of epochs
-  nrepeat=10
+  nrepeat=20
 
   ## regularizatin constant for xlambda optimization parameter
-  cregular=0.000001  
+  cregular=0.1  
 
   ## activation function
   iactfunc = 0  ## =0 identity, =1 arcsinh, =2 2*sigmoid-1, =3 tanh, =4 relu
@@ -241,7 +241,7 @@ def main(iworkmode=None):
     
     ## training
     ## some design configuration
-    idesign  = 1   ## some designs are demonstrated here
+    idesign  = 0   ## some designs are demonstrated here
     
     if idesign == 0: ## simplest case
       ## variables of X1 combined with variables of X2
