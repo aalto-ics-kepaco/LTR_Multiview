@@ -19,7 +19,7 @@ dependencies = ["numpy>=1.20.0",
     "scipy>=1.9"]
 
 [project.urls]
-"Homepage" = "https://github.com/aalto-ics-kepaco/LTR_multiview"
-"Bug Tracker" = "https://github.com/aalto-ics-kepaco/LTR_multiview/issues"
+"Homepage" = "https://github.com/aalto-ics-kepaco/LTR_Multiview"
+"Bug Tracker" = "https://github.com/aalto-ics-kepaco/LTR_Multiview/issues"
 
 
